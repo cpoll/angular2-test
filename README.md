@@ -33,7 +33,7 @@ Now you can continue working on the new project.
 ## Prerequisites
 
 Node.js and npm are essential to Angular development. 
-    
+        
 <a href="https://docs.npmjs.com/getting-started/installing-node" target="_blank" title="Installing Node.js and updating npm">
 Get it now</a> if it's not already installed on your machine.
  
@@ -47,14 +47,14 @@ We recommend [nvm](https://github.com/creationix/nvm) for managing multiple vers
 
 Clone this repo into new project folder (e.g., `my-proj`).
 ```shell
-git clone https://github.com/angular/quickstart  my-proj
+git clone https://github.com/angular/quickstart    my-proj
 cd my-proj
 ```
 
 We have no intention of updating the source on `angular/quickstart`.
 Discard the `.git` folder..
 ```shell
-rm -rf .git  # OS/X (bash)
+rm -rf .git    # OS/X (bash)
 rd .git /S/Q # windows
 ```
 ### Delete _non-essential_ files (optional)
@@ -175,10 +175,10 @@ we configured Protractor to find them.
 Thereafter, run them with `npm run e2e`.
 
 That command first compiles, then simultaneously starts the `lite-server` at `localhost:8080`
-and launches Protractor.  
+and launches Protractor.    
 
 The pass/fail test results appear at the bottom of the terminal window.
-A custom reporter (see `protractor.config.js`) generates a  `./_test-output/protractor-results.txt` file
+A custom reporter (see `protractor.config.js`) generates a    `./_test-output/protractor-results.txt` file
 which is easier to read; this file is excluded from source control.
 
 Shut it down manually with `Ctrl-C`.
