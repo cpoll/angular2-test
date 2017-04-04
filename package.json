@@ -1,6 +1,6 @@
 {
     "name": "angular2-test",
-    "version": "0.1",
+    "version": "1.0.0",
     "description": "QuickStart package.json from the documentation, supplemented with testing support",
     "scripts": {
         "build": "tsc -p src/",
@@ -18,7 +18,10 @@
         "test": "concurrently \"npm run build:watch\" \"karma start karma.conf.js\"",
         "pretest:once": "npm run build",
         "test:once": "karma start karma.conf.js --single-run",
-        "lint": "tslint ./src/**/*.ts -t verbose"
+        "test:lint": "npm run lint",
+        "lint": "concurrently \"npm run lint:dev\" \"npm run lint:test\"",
+        "lint:test": "tslint -t verbose -c tslint.json src/**/*.spec.ts src/**/*.mock.ts",
+        "lint:dev": "tslint -t verbose -c tslint.json -e src/**/*.spec.ts src/**/*.ts"
     },
     "keywords": [],
     "author": "",

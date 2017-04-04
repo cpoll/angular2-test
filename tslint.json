@@ -1,4 +1,8 @@
 {
+    "lintOptions": {
+        "typeCheck": true
+    },
+    "extends": "tslint:latest",
     "rules": {
         "class-name": true,
         "comment-format": [
@@ -58,6 +62,7 @@
             "check-else",
             "check-whitespace"
         ],
+        "ordered-imports": [false],
         "quotemark": [
             true,
             "single"
@@ -66,6 +71,7 @@
         "semicolon": [
             "always"
         ],
+        "trailing-comma": [false],
         "triple-equals": [
             true,
             "allow-null-check"
