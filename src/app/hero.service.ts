@@ -17,6 +17,9 @@ const HEROES_MOCK_DATA: Hero[] = [
 @Injectable()
 export class HeroService {
     getHeroes(): Promise<Hero[]> {
-        return Promise.resolve(HEROES_MOCK_DATA);
+        // TODO: Get from server
+        return new Promise(resolve => {
+            setTimeout(() => resolve(HEROES_MOCK_DATA), 1000);
+        });
     }
 }
