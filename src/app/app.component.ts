@@ -27,10 +27,12 @@ export class Hero {
 export class AppComponent {
     public  title = 'Tour of Heroes';
 
-    public hero: Hero = {
-      id: 1,
-      name: 'Windstorm'
-    };
+    public selectedHero: Hero;
 
     public heroes = HEROES;
+
+    onSelect(hero: Hero): void {
+        this.selectedHero = hero;
+    }
+
 }
