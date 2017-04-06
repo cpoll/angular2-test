@@ -15,6 +15,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
         FormsModule,
         RouterModule.forRoot([
             {
+                path: '',
+                redirectTo: '/dashboard',
+                pathMatch: 'full'
+            },
+            {
+                path: 'dashboard',
+                component: DashboardComponent
+            },
+            {
                 path: 'heroes',
                 component: HeroesComponent
             }
